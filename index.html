@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cardbell</title>
+<!----------- CSS link & Fontawesome CDN link ----------->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="icon" href ="favicon_io/favicon.ico">
+    </head>
+
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo, to represent heart"
+            width="70">
+        </div>
+    </header>
+
+
+<!-------------------- content section ------------------------->        
+    <body> 
+
+        <div class="content">
+            <h1>Coming Soon!</h1>
+            <p>
+                Hi, Welcome to our website! <br>
+                Our awesome website is under construction. <br>
+                We are coming at March 2024! <br>
+                If you're interested in us,
+                please fill in your email address in the box below. <br>
+                You will get information at that time.
+            </p>
+        </div>
+
+<!----------------- input section ------------------->
+
+        <form method="post" action="email.php">
+            <div class="input-box">
+                <input type="email" class="input" id="email" name="email" 
+                required placeholder="Please enter your email.">
+                <i class="fas fa-envelope email-icon"></i>
+                <i class="fas fa-exclamation-circle error-icon"></i>
+                <i class="fas fa-check-circle passed-icon"></i>
+                <input class="button" type="submit" value="submit">               
+            </div>
+
+            <div class="text">
+                
+            </div>
+    
+        </form>
+
+<!------------ scripte section -------------->
+        
+        <script src="script.js"></script>
+
+<!------------------- php section ----------------------->
+
+        
+
+    </body>
+
+</html>

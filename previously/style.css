@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#4671EA, #AC34E7);
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-family: 'Lucida Handwriting', Lucida, cursive;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+/*---------------- content ------------------*/
+
+.content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+}
+
+.content p {
+    text-align: left;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: cursive;
+}
+
+/*------------------- input ----------------------*/
+
+form {
+    top: 20%;
+    left: 1%;
+    height: 50px;
+    align-items: center;
+    max-width: 650px;
+    width: 100%;
+    background: hsl(5, 24%, 94%);
+    padding: 20px 10px;
+    border-radius: 4px;
+}
+
+form label {
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(23, 19%, 40%);
+}
+
+form .input-box {
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 75%;
+    align-items: center;
+}
+
+.input-box input {
+    height: 100%;
+    outline: none;
+    border: 2px soild hsl(5, 35%, 58%);
+    border-radius: 4px;
+    color: hsl(23, 19%, 40%);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.input-box input.input {
+    margin-right: 20px;
+}
+
+form.valid .input-box input.input {
+    border-color: hsl(5, 35%, 58%);
+}
+
+.input-box input.input:focus {
+    border-color: hsl(5, 35%, 58%);
+}
+
+form.error input.input {
+    border-color: #fa1230;
+}
+
+.input-box input.button {
+    color: #fff;
+    background: hsl(5, 12%, 76%);
+    width: 25%;
+    border: none;
+    cursor: pointer;
+}
+
+.input-box input.button:hover {
+    background: hsl(5, 35%, 58%);
+}
+
+.input i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input-box i.email-icon {
+    color: hsl(5, 12%, 76%);
+    left: 20px;
+    transition: all 0.3s ease;
+}
+
+form.valid i.email-icon {
+    color: hsl(5, 35%, 58%);
+}
+
+.input-box input.input:focus ~ i.email-icon {
+    color: hsl(5, 35%, 58%);
+}
+
+.input-box .error-icon,
+.input-box .passed-icon {
+    color: #fa1230;
+    left: 50%;
+    /*--display: none;--*/
+}
+
+form.error .error-icon {
+    display: block;
+}
+
+.input-box .passed-icon {
+    color: #1748cf;
+}
+
+form.valid .passed-icon {
+    display: block;
+}
+
+form .text {
+    color: #fa1230;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+form.valid .text {
+    color: #1748cf;
+}
+
+/*---
+form .btn {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    padding: 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid antiquewhite;
+    border-radius: 4px;
+}
+
+form .btn:hover {
+    background-color: antiquewhite;
+    color: darkgray;
+}
+-----*/
